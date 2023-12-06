@@ -59,7 +59,7 @@
       </div>
       <div>
         <%= form_with model: [@books, @book_comment] do |f| %>
-          <div><%= f.text_area :comment %></div>
+          <div><%= f.text_area :comment, row: "5", placeholder: "コメントをここに", class: "w-100" %></div>
           <div><%= f.submit "送信" %></div>
         <% end %>
       </div>
